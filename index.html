@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="./styles/global.css" />
-    <title>StepUp-2023 - Boost</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dario & Brigida - Wedding</title>
   </head>
   <body>
-    <div class="pageSize">
-      <header class="flex itemsCenter">
-        <img alt="StepUp2023 Logo" src="./assets/Step-Up-Logo.png" />
-      </header>
+    <header>
+      <h1>Dário & Brígida Wedding</h1>
+    </header>
 
-      <nav class="flex">
-        <ul class="flexRow">
-          <li>
-            <a href="./pages/Launch/index.html">Launch</a>
-          </li>
-
-          <li>
-            <a>Boost</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="weekHeader">
-        <h2>Semana 1</h2>
-      </div>
-
-      <ul class="lesonList">
-        <li>
-          <a href="youtube.com/c/mozstundet" target="_blank" class="flexRow">
-            <div><span>1</span>Introdução</div>
-            <img alt="Link button" src="./assets/link-button.svg" />
-          </a>
-        </li>
+    <section class="contact">
+      <h2>Contactos</h2>
+      <p>Para mais informações, entre em contacto connosco:</p>
+      <ul>
+        <li>Telefone: 844825696</li>
+        <li>Telefone: 864825696</li>
+        <li>Telefone: 824825696</li>
       </ul>
+      <a id="maps-button" href="[Link do Google Maps]">Ver Localização</a>
+    </section>
+
+    <section class="video">
+      <h2>Vídeo dos Noivos</h2>
+      <div class="video-wrapper">
+        <!-- Insira o código de embed do YouTube aqui -->
+      </div>
+    </section>
+
+    <section class="honeymoon">
+      <h2>Operação Lua de Mel</h2>
+      <p>Ajude-nos a ter uma lua de mel incrível!</p>
+      <ul>
+        <li><a href="#">Doar 50.00 Mt</a></li>
+        <li><a href="#">Doar 100.00 Mt</a></li>
+        <li><a href="#">Doar outro valor</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Dário & Brígida. Todos os direitos reservados.</p>
+
+      <p>Supported By TurboKode</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="donateModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Formas de Doação</h2>
+        <p>Você pode ajudar através dos seguintes serviços:</p>
+        <ul>
+          <li>M-Pesa: 844825696</li>
+          <li>E-mola: 860545393</li>
+          <li>BIM: 330925007</li>
+        </ul>
+      </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
