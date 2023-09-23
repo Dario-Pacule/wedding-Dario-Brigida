@@ -1,64 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Dario & Brigida - Wedding</title>
+    <title>Linktree Style Page</title>
+    <!-- Link para a CDN do FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #fff5e1; /* Fundo branco tendendo ao dourado */
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        text-decoration: none;
+        list-style: none;
+      }
+
+      .container {
+        max-width: 400px; /* Largura máxima para telas menores (ajuste conforme necessário) */
+        margin: 0 auto; /* Centraliza a div */
+        padding: 20px;
+      }
+
+      .logo {
+        margin-top: 20px;
+      }
+
+      .logo img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #ffd700; /* Cor dourada de fundo para o logotipo */
+        padding: 10px; /* Espaçamento interno para o logotipo */
+      }
+
+      .buttons {
+        margin-top: 20px;
+      }
+
+      .button {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #ff9900; /* Cor laranja para os botões */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        display: block; /* Faz com que os botões ocupem toda a largura */
+      }
+
+      .button i {
+        margin-right: 10px; /* Espaçamento à direita do ícone */
+      }
+
+      /* Media query para ajustar o tamanho da div container em telas maiores */
+      @media (min-width: 768px) {
+        .container {
+          max-width: 800px; /* Largura máxima para telas maiores */
+        }
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Dário & Brígida Wedding</h1>
-    </header>
-
-    <section class="contact">
-      <h2>Contactos</h2>
-      <p>Para mais informações, entre em contacto connosco:</p>
-      <ul>
-        <li>Telefone: 844825696</li>
-        <li>Telefone: 864825696</li>
-        <li>Telefone: 824825696</li>
+    <div class="container">
+      <ul class="buttons">
+        <li>
+          <a
+            class="button"
+            href="https://maps.app.goo.gl/gYC8Ra7EPzKxE82TA"
+            target="_blank"
+          >
+            <i class="fas fa-map-marker-alt"></i> Localização Igreja
+          </a>
+        </li>
+        <li>
+          <a
+            class="button"
+            href="https://maps.apple.com/?ll=-25.998642,32.428758&q=Localiza%C3%A7%C3%A3o%20atual&t=h"
+            target="_blank"
+          >
+            <i class="fas fa-map-marker-alt"></i> Localização Salão
+          </a>
+        </li>
       </ul>
-      <a id="maps-button" href="[Link do Google Maps]">Ver Localização</a>
-    </section>
-
-    <section class="video">
-      <h2>Vídeo dos Noivos</h2>
-      <div class="video-wrapper">
-        <!-- Insira o código de embed do YouTube aqui -->
-      </div>
-    </section>
-
-    <section class="honeymoon">
-      <h2>Operação Lua de Mel</h2>
-      <p>Ajude-nos a ter uma lua de mel incrível!</p>
-      <ul>
-        <li><a href="#">Doar 50.00 Mt</a></li>
-        <li><a href="#">Doar 100.00 Mt</a></li>
-        <li><a href="#">Doar outro valor</a></li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>&copy; 2023 Dário & Brígida. Todos os direitos reservados.</p>
-
-      <p>Supported By TurboKode</p>
-    </footer>
-
-    <!-- Modal -->
-    <div id="donateModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Formas de Doação</h2>
-        <p>Você pode ajudar através dos seguintes serviços:</p>
-        <ul>
-          <li>M-Pesa: 844825696</li>
-          <li>E-mola: 860545393</li>
-          <li>BIM: 330925007</li>
-        </ul>
-      </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
